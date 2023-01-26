@@ -7,18 +7,26 @@ DROP DATABASE IF EXISTS SpotifyClone;
       artista_nome VARCHAR(200) NOT NULL,
   ) engine = InnoDB;
 
-    CREATE TABLE SpotifyClone.planos(
+  CREATE TABLE SpotifyClone.planos(
       plano_id INT PRIMARY KEY AUTO_INCREMENT,
       plano VARCHAR(50) NOT NULL,
       valor_plano DOUBLE NOT NULL,
   ) engine = InnoDB;
 
-      CREATE TABLE SpotifyClone.albuns(
+  CREATE TABLE SpotifyClone.albuns(
       album_id INT PRIMARY KEY AUTO_INCREMENT,
-      album_nome VARCHAR(250) NOT NULL,
+      album_nome VARCHAR(200) NOT NULL,
       ano_lancamento YEAR NOT NULL,
       artista_id INT NOT NULL
       FOREIGN KEY (artista_id) REFERENCES artistas (artista_id)
+  ) engine = InnoDB;
+
+  CREATE TABLE SpotifyClone.cancoes(
+      cancao_id INT PRIMARY KEY AUTO_INCREMENT,
+      cancao_nome VARCHAR(200) NOT NULL,
+      album_id INT NOT NULL
+      duracao_segundos INT NOT NULL
+      FOREIGN KEY (album_id) REFERENCES albuns (album_id)
   ) engine = InnoDB;
 
   INSERT INTO SpotifyClone.artistas (artista_nome)
@@ -47,3 +55,16 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ('QVVJFA?', 2003, 4);
     ('Somewhere Far Beyond', 2007, 5);
     ('I Put A Spell On You', 2012, 6);
+
+  INSERT INTO SpotifyClone.cancoes (cancao_nome, album_id, duracao_segundos)
+  VALUES
+    ('BREAK MY SOUL', 1, 279),
+    ('VIRGO’S GROOVE', 1, 369),
+    ('ALIEN SUPERSTAR', 1, 116),
+    ('Don’t Stop Me Now', 2, 203),
+    ('Under Pressure', 3, 152),
+    ('Como Nossos Pais', 4, 105);
+    ('O Medo de Amar é o Medo de Ser Livre', 5, 207);
+    ('Samba em Paris', 6, 267);
+    ('The Bard’s Song', 7, 244);
+    ('Feeling Good', 8, 100);
