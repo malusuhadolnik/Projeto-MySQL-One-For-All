@@ -9,8 +9,8 @@
   "coluna_seguindo_artistas": "nome-da-coluna-da-artista",
   "tabela_artista": "artistas",
   "coluna_artista": "artista_nome",
-  "tabela_album": "nome-da-tabela-de-albuns",
-  "coluna_album": "nome-do-album",
+  "tabela_album": "albuns",
+  "coluna_album": "album_nome",
   "tabela_cancoes": "nome-da-tabela-de-canções",
   "coluna_cancoes": "nome-da-canção"
 }
