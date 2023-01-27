@@ -47,12 +47,12 @@ DROP DATABASE IF EXISTS SpotifyClone;
   ) engine = InnoDB;
 
   CREATE TABLE SpotifyClone.historico_de_reproducoes(
-      historico_id INT PRIMARY KEY AUTO_INCREMENT,
       data_reproducao DATETIME(6) NOT NULL,
       cancao_id INT NOT NULL,
       usuario_id INT NOT NULL,
-      FOREIGN KEY (cancao_id) REFERENCES cancoes (cancao_id),
-      FOREIGN KEY (usuario_id) REFERENCES usuarios (usuario_id)
+      CONSTRAINT PRIMARY KEY(cancao_id, usuario_id),
+        FOREIGN KEY (cancao_id) REFERENCES cancoes (cancao_id),
+        FOREIGN KEY (usuario_id) REFERENCES usuarios (usuario_id)
   ) engine = InnoDB;
 
   INSERT INTO SpotifyClone.artistas (artista_nome)
@@ -119,6 +119,9 @@ DROP DATABASE IF EXISTS SpotifyClone;
     (4, 4),
     (5, 5),
     (5, 6),
+    (6, 1),
+    (6, 6),
+    (7, 6),
     (9, 3),
     (10, 2);
 
