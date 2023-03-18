@@ -1,4 +1,3 @@
-# :construction: README em construção ! :construction:
 # Projeto One for All
 
 # Sobre
