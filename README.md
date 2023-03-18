@@ -7,7 +7,7 @@ Nele,foi criado um banco de dados MySQL à partir de tabelas do Excel. A tabela 
 
 Os arquivos desenvolvidos por mim são os desafios de 1 a 10. Os demais foram desenvolvidos pelo time da Trybe.
 
-##Descrição dos desafios:
+## Descrição dos desafios:
 - desafio1.sql:banco de dados (DB) SpotfyClone;
 - desafio2.sql: exibe a quantidade de canções, artistas e ábuns presentes no DB;
 - desafio3.sql: exibe a quantidade de músicas ouvidas e total de minutos por pessoa usuária;
