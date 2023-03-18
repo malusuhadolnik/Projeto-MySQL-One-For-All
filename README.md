@@ -19,7 +19,7 @@ Os arquivos desenvolvidos por mim são os desafios de 1 a 10. Os demais foram de
 - desafio9.sql: exibe a quantidade de músicas que estão presentes atualmente no histórico de reprodução de uma pessoa usuária específica;
 - desafio10.sql: exibe o nome e quantas vezes cada canção foi tocada por pessoas usuárias do plano gratuito ou pessoal;
 
-## Técnologias usadas
+## Tecnologias usadas
 
 > Back-End
 Docker, docker-compose, SQL, Node.js
