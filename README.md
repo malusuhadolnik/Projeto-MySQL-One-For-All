@@ -37,7 +37,7 @@ docker-compose up -d
 
 2. Dentro do diretório do projeto, execute o conteiner:
 ```bash
-docker exec -it store_manager bash
+docker exec -it one_for_all bash
 ``` 
 - Ele dá acesso ao terminal interativo do container criado pelo compose;
 - As credencias de acesso ao banco de dados estão definidas no arquivo docker-compose.yml.
